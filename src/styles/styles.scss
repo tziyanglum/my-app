@@ -1,0 +1,41 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+
+  section.resume-section {
+    min-height: 100vh;
+  }
+}
+
+section.resume-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}

@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { ProjectsComponent } from './components/projects/projects.component';
+import { ContainerComponent } from './components/container/container.component';
 
 
 const routes: Routes = [{
-  path: 'home',
-  component: HomeComponent
+  path: '',
+  component: ContainerComponent
 },
 {
-  path: 'projects',
-  component: ProjectsComponent
+  path: '**',
+  redirectTo: ''
 }
 ];
 
