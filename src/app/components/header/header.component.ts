@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  public constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  public makeActive(param: string): boolean {
+    return this.router.url.includes(param)
+  }
 }

@@ -12,16 +12,16 @@ html {
 }
 
 @media (min-width: 768px) {
-  section.resume-section .resume-item .resume-date {
+  .resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
 
-  section.resume-section {
+  .resume-section {
     min-height: 100vh;
   }
 }
 
-section.resume-section {
+.resume-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
